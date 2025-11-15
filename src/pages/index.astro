@@ -1,16 +1,38 @@
-<h1>Revolutionizing 3D Printing with Open-Source Precision and Ease</h1>
-<p>In the rapidly evolving world of 3D printing, where hobbyists and professionals alike seek tools that balance speed, accuracy, and accessibility, <a href="https://orcaslicer3d.com/">orcaslicer</a> emerges as a standout solution. Launched in 2023 as a fork of the popular Bambu Studio, this free, open-source software has quickly garnered a dedicated following, boasting over 11,200 GitHub stars and 1,400 forks. Developed by SoftFever and fueled by an active community, Orca Slicer transforms complex 3D models into flawless G-code instructions, enabling users to produce high-quality prints with minimal hassle. Whether you're a beginner tinkering with your first PLA figurine or a seasoned engineer optimizing multi-material prototypes, Orca Slicer delivers intuitive features that make professional-grade results attainable for all.
-A Deep Dive into Key Features
-What sets Orca Slicer apart is its robust suite of tools designed to streamline the slicing process—the critical step where digital designs become printable layers. At its core, the software excels in automatic calibration, eliminating the guesswork often associated with 3D printing. Built-in tests for Pressure Advance, Input Shaping, Z Offset, Temperature Towers, Retraction, and Adaptive Bed Mesh ensure your printer is tuned for optimal performance right out of the gate. Imagine dialing in perfect retraction settings to banish stringing, or using adaptive bed meshing to conquer warped first layers—all with a few clicks.
-For those chasing aesthetic perfection, features like Seam Painting offer visual control over seam placement, hiding those unsightly blobs on your prints' surfaces. The Polyhole Fix intelligently compensates for undersized holes in models, a common frustration in functional parts like gears or brackets. Speed demons will appreciate smart slicing modes such as Lightning Infill for rapid prototypes and the Arachne Wall Generator for stronger, more efficient walls. Ironing smooths top surfaces to a glossy finish, while advanced options like Extra Solid Infill and improved infill rotation add reinforcement where it counts.
-Orca Slicer's versatility shines in its remote printing integrations. Seamlessly connect with Obico, OctoPrint, Mainsail, or Fluidd for wireless monitoring and control, turning your setup into a hands-free operation. And with multi-language support in English, German, French, Spanish, Brazilian Portuguese, and Traditional Chinese, it's truly global. Best of all, it runs fully offline—online access is only needed for updates—making it ideal for makers on the go.
-Broad Compatibility: From Bambu to Beyond
-One of Orca Slicer's greatest strengths is its refusal to play favorites with hardware. While it originated from Bambu Studio, it's engineered for universal appeal, supporting a wide array of printers without the ecosystem lock-in seen in proprietary software. Ready-to-use profiles are available for Bambu Lab models like the X1C, P1P, and A1 Mini, but the list extends far beyond: Creality's Ender 3 V2, Ender 5, and CR-10 series; Anycubic's Kobra, Vyper, and Mega X; Elegoo's Neptune 3/4; Prusa's MK3S+, MINI, and XL (with Marlin firmware); plus Voron, RatRig, Tronxy, Sovol SV08 MAX, Flyingbear, Rolohaun Delta Flyer, Qidi, and Phrozen machines.
-Even if your printer isn't pre-configured, Orca Slicer imports profiles from Cura or PrusaSlicer via .ini or .3mf files, and it accommodates firmwares like Klipper and Marlin with community tweaks. Filament support is equally comprehensive, with recommended settings for everyday materials:
+---
+import Layout from "../layouts/Layout.astro";
+---
 
-PLA: The go-to for beginners—0.2 mm layer height, 15-20% grid infill, 50 mm/s speed, 200°C nozzle, 60°C bed.
-PETG: Tough and flexible—20-25% gyroid infill, 45 mm/s speed, 240°C nozzle, 75°C bed (slow it down to avoid oozing).
-ABS: Heat-resistant workhorse—25% cubic infill, 40 mm/s speed, 250°C nozzle, 100°C bed (enclosed printers recommended).
+<Layout title="Revolutionizing 3D Printing with Open-Source Precision and Ease">
+  <main class="mx-auto max-w-5xl px-4 py-16">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Revolutionizing 3D Printing with Open-Source Precision and Ease
+    </h1>
 
-These presets, combined with material-specific tips like dry storage and slower speeds for tricky filaments, ensure consistent results across diverse setups.</p>
-<a ...>Read the Docs</a>
+    <p class="text-lg leading-relaxed mb-4">
+      In the rapidly evolving world of 3D printing, where hobbyists and professionals alike seek
+      tools that balance speed, accuracy, and accessibility, <a href="https://orcaslicer3d.com/"
+      class="text-sky-400 underline" target="_blank">OrcaSlicer</a> emerges as a standout solution.
+      This free, open-source slicer offers powerful features without locking you into a single
+      printer brand.
+    </p>
+
+    <!-- yahan se neeche apna baqi article text paste kar do,
+         jitna chaaho paragraphs me -->
+
+    <p class="mt-8">
+      <a
+        href="https://orcaslicer3d.com/"
+        target="_blank"
+        class="inline-flex items-center rounded-md bg-pink-500 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-pink-600 transition"
+      >
+        Visit OrcaSlicer3D Website
+      </a>
+    </p>
+
+    <p class="mt-4">
+      <a href="/blog/orcaslicer3d" class="underline text-sky-400">
+        Read detailed OrcaSlicer article →
+      </a>
+    </p>
+  </main>
+</Layout>
