@@ -1,19 +1,16 @@
----
-import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
+<h1>Revolutionizing 3D Printing with Open-Source Precision and Ease</h1>
+<p>In the rapidly evolving world of 3D printing, where hobbyists and professionals alike seek tools that balance speed, accuracy, and accessibility, <a href="https://orcaslicer3d.com/">orcaslicer</a> emerges as a standout solution. Launched in 2023 as a fork of the popular Bambu Studio, this free, open-source software has quickly garnered a dedicated following, boasting over 11,200 GitHub stars and 1,400 forks. Developed by SoftFever and fueled by an active community, Orca Slicer transforms complex 3D models into flawless G-code instructions, enabling users to produce high-quality prints with minimal hassle. Whether you're a beginner tinkering with your first PLA figurine or a seasoned engineer optimizing multi-material prototypes, Orca Slicer delivers intuitive features that make professional-grade results attainable for all.
+A Deep Dive into Key Features
+What sets Orca Slicer apart is its robust suite of tools designed to streamline the slicing process—the critical step where digital designs become printable layers. At its core, the software excels in automatic calibration, eliminating the guesswork often associated with 3D printing. Built-in tests for Pressure Advance, Input Shaping, Z Offset, Temperature Towers, Retraction, and Adaptive Bed Mesh ensure your printer is tuned for optimal performance right out of the gate. Imagine dialing in perfect retraction settings to banish stringing, or using adaptive bed meshing to conquer warped first layers—all with a few clicks.
+For those chasing aesthetic perfection, features like Seam Painting offer visual control over seam placement, hiding those unsightly blobs on your prints' surfaces. The Polyhole Fix intelligently compensates for undersized holes in models, a common frustration in functional parts like gears or brackets. Speed demons will appreciate smart slicing modes such as Lightning Infill for rapid prototypes and the Arachne Wall Generator for stronger, more efficient walls. Ironing smooths top surfaces to a glossy finish, while advanced options like Extra Solid Infill and improved infill rotation add reinforcement where it counts.
+Orca Slicer's versatility shines in its remote printing integrations. Seamlessly connect with Obico, OctoPrint, Mainsail, or Fluidd for wireless monitoring and control, turning your setup into a hands-free operation. And with multi-language support in English, German, French, Spanish, Brazilian Portuguese, and Traditional Chinese, it's truly global. Best of all, it runs fully offline—online access is only needed for updates—making it ideal for makers on the go.
+Broad Compatibility: From Bambu to Beyond
+One of Orca Slicer's greatest strengths is its refusal to play favorites with hardware. While it originated from Bambu Studio, it's engineered for universal appeal, supporting a wide array of printers without the ecosystem lock-in seen in proprietary software. Ready-to-use profiles are available for Bambu Lab models like the X1C, P1P, and A1 Mini, but the list extends far beyond: Creality's Ender 3 V2, Ender 5, and CR-10 series; Anycubic's Kobra, Vyper, and Mega X; Elegoo's Neptune 3/4; Prusa's MK3S+, MINI, and XL (with Marlin firmware); plus Voron, RatRig, Tronxy, Sovol SV08 MAX, Flyingbear, Rolohaun Delta Flyer, Qidi, and Phrozen machines.
+Even if your printer isn't pre-configured, Orca Slicer imports profiles from Cura or PrusaSlicer via .ini or .3mf files, and it accommodates firmwares like Klipper and Marlin with community tweaks. Filament support is equally comprehensive, with recommended settings for everyday materials:
 
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
+PLA: The go-to for beginners—0.2 mm layer height, 15-20% grid infill, 50 mm/s speed, 200°C nozzle, 60°C bed.
+PETG: Tough and flexible—20-25% gyroid infill, 45 mm/s speed, 240°C nozzle, 75°C bed (slow it down to avoid oozing).
+ABS: Heat-resistant workhorse—25% cubic infill, 40 mm/s speed, 250°C nozzle, 100°C bed (enclosed printers recommended).
 
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
----
-
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
-</Layout>
+These presets, combined with material-specific tips like dry storage and slower speeds for tricky filaments, ensure consistent results across diverse setups.</p>
+<a ...>Read the Docs</a>
